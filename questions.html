@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz-App By Kailash Meghwar</title>
+	<link rel="icon" href="img/logo.jpg" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="box" id="questionscreen" >
+		<div class="title">
+			Online Quiz Application
+		</div>
+		<div class="header">
+			<div class="scorebox">
+				Score:<span></span>
+			</div>
+			<div class="timerbox">
+				Time Left:<span></span>
+			</div>
+		</div>
+		<div class="questionbox">
+		  What is HTML?	
+		</div>
+		<div class="optionbox">
+			<span onclick="checkAns(this)" data-opt="1"></span>
+			<span onclick="checkAns(this)" data-opt="2"></span>
+			<span onclick="checkAns(this)" data-opt="3"></span>
+			<span onclick="checkAns(this)" data-opt="4"></span>
+		</div>
+		<div class="footer">
+			<button onclick="nextQuestion()">Next</button>
+			<button onclick="showResult(1)">Show Result</button>
+		</div>
+	</div>
+	<div class="box" id="resultscreen" style="display: none;">
+		<div class="title">
+			Online Quiz Result
+		</div>
+		<div class="resultbox">
+		   <label>Questions :</label>
+		   <span id="totalquestion">10</span>
+		   <label>Attemp :</label>
+		   <span id="attempquestion">5</span>
+		   <label>Correct :</label>
+		   <span id="correctquestion">5</span>
+		   <label>Wrong :</label>
+		   <span id="wrongquestion">5</span>	
+		</div>
+		<div class="buttonbox">
+			<a href="index.html">Start Agian</a>
+		</div>
+	</div>
+	<script src="js/quiz.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
